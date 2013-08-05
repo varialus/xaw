@@ -60,6 +60,7 @@ import (
 // */
 //
 //String fallback_resources[] = { "*Label.Label:    Hello, World", NULL };
+var fallback_resources []xt.String = []xt.String{"*Label.Label:    Hello, World",}
 //
 //main(argc, argv)
 //int argc;
@@ -70,6 +71,10 @@ func main() {
 	var app_con xt.XtAppContext
 	fmt.Println("app_con ==", app_con)
 //    Widget toplevel;
+// TODO: uncomment
+//	var toplevel xt.Widget
+// TODO: uncomment
+//	fmt.Println("toplevel ==", toplevel)
 //
 //    /*
 //     * Initialize the Toolkit, set the fallback resources, and get
@@ -78,6 +83,10 @@ func main() {
 //
 //    toplevel = XtAppInitialize(&app_con, "Xhw", NULL, ZERO, &argc, argv,
 //                               fallback_resources, NULL, ZERO);
+// TODO: uncomment
+//	toplevel = xt.XtAppInitialize(&app_con, "Xhw", nil, xaw.ZERO, len(os.Args), os.Args, fallback_resources, nil, xaw.ZERO);
+// TODO: uncomment
+//	fmt.Println("toplevel ==", toplevel)
 //
 //    /*
 //     * Create a Widget to display the string.  The label is picked up
